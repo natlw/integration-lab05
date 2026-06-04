@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Blog</title></head>
+    <body>
+        <h1>Lista postów</h1>
+        {% for post in posts %}
+            <div>
+                <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
+                <p>Autor: {{ post.author }} | Data: {{ post.published_at }}</p>
+            </div>
+        {% endfor %}
+        </body>
+</html>

@@ -1,0 +1,17 @@
+# Środowisko wirtualne i zależności
+venv/
+node_modules/
+
+# Cache i logi
+**/__pycache__/
+*.log
+npm-debug.log*
+
+# Baza danych (lokalna)
+db.sqlite3
+*.sqlite
+
+# Pliki IDE i systemu
+.vscode/
+.idea/
+.DS_Store
