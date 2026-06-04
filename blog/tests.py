@@ -13,7 +13,7 @@ class BlogLogicTests(TestCase):
         post = Post.objects.create(
             title="Moj testowy post", content="Treść posta", author=self.user
         )
-        self.assertEqual(str(post), "Moj testowy post")
+        self.assertEqual(str(post), "Błędny tytuł")
 
     def test_post_list_view_contains_created_post(self):
         """Test widoku: sprawdza, czy strona listy postów zawiera utworzony wpis."""
